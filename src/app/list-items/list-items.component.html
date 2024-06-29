@@ -1,0 +1,14 @@
+<div>
+    <h2>Items in list</h2>
+    <form (ngSubmit)="addItem()">
+        <input [(ngModel)]="newItem" placeholder="Add an item" name="item" required>
+        <button type="submit">Add Item</button>
+    </form>
+    <ul>
+        <li *ngFor="let item of items">
+            <input type="checkbox" [(ngModel)]="item.purchased" (change)="updateItem(item)">
+            {{item.name}}
+            <button (click)="deleteItem(item._id)">Delete</button>
+        </li>
+    </ul>
+</div>
