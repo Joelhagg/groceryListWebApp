@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GroceryService } from '../service/grocery.service';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-list-items',
   standalone: true,
-  imports: [BrowserModule, FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './list-items.component.html',
   styleUrl: './list-items.component.css'
 })
