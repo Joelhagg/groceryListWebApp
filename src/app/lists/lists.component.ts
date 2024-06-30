@@ -1,11 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { GroceryService } from '../service/grocery.service';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-lists',
   standalone: true,
-  imports: [CommonModule],
+  imports: [BrowserModule, CommonModule, FormsModule],
   templateUrl: './lists.component.html',
   styleUrl: './lists.component.css'
 })
